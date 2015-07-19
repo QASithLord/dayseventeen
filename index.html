@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day Seventeen</title>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css">
+	<!-- <link href="/normalize.css" rel="stylesheet"> -->
+	<!-- A link tag lets you include CSS from an external file. it always needs two attributes.
+	1. href - a URL where the CSS file lives
+	2. rel- which shoudl always be set to "stylesheet" -->
+	<!-- Normalize.css if a css file, makes browsers "render all elements more consistently and in line with modern standards" -->
+	<!-- Meta-info goes here -->
+	<style>
+		header{
+			text-align: center;
+			background: url("images/lakeunion.jpg");
+			background-size: cover;
+			color: white;
+		}
+		ul {
+			padding: 10px;
+			background: black;
+		}
+		/*By default, the browser gives the list some padding on the left to make room for the bullet points, causing the list to be off center. The padding property fixes this here by putting padding on ALL sides.*/
+		li {
+			display: inline;
+			padding: 0px 10px 0px 10px;
+		}
+		/*Make the links all line up next to each other in a row with the inline property*/
+		/*padding: top right bottom left;*/
+		a {
+      		color: white;
+   		}
+   		h1 {
+   			font-size: 50px;
+   		}
+   		img {
+      		margin: 40px 0px 0px 0px;
+      		border: 7px solid white;
+      		border-radius: 20px;
+    	}
+
+    	article {
+    		max-width: 500px;
+    		padding: 20px;
+    		margin: 0 auto;
+    		/*The margin controls the amount of space between the outside of an element and the other elements around it.When we set margin to "0 auto" it has 0 margin on the top and bottom, and "auto" margin on the left and right.  Since both the left and right margin stretches all the way to the edge of the page (thats what auto means) the effect is that the blog post is centered in the page.*/
+
+    		/*By changing width to max-width, it meansour article elements can be smaller than 500px, but not any larger. When the browser is really small, the title and navigation get messed up. you can fix it by using a media query, which is a technique that allows us to set CSS styles that only activate when the browser is a certain width */
+
+    	}
+
+    	 @media (max-width: 500px) {
+      		h1 {
+        		font-size: 36px;
+      		}
+      		li {
+      			display: block;
+      			padding: 5px;
+      		}
+      	}
+      /*	@media (max-width: 500px)  is basically setting a condition. That the browser should be smaller than 500 px, and when that condition is true, the CSS inside it gets activated. */
+	</style>
+</head>
+<body>
+	<!-- Page content goes here -->
+
+	<header>
+		<!-- a container that holds other elements, but for a website's header -->
+		<img src="images/cyndy2.png">
+		<h1>Cyndy's Blog</h1>
+		<ul>
+			<li><a href="#">About Me</a></li>
+			<!-- The <a> tag has an attribute called href, which controls the URL your browser opens when you click the link on the page. href stands for hypertext reference. -->
+			<li><a href="#">Work Experience</a></li>
+			<li><a href="#">Hobbies</a></li>
+		</ul>
+
+	</header>
+	<article>
+		<!-- Article tag lets us group together multiple HTML elements that form a single point of content -->
+		<h2>Welcome to my first blog created in HTML and inline CSS.</h2>
+		<p>This was created based off of the Dash tutorial by Generaly Assembly. Creating your own blog is Project #2. I followed the tutorial, and as I went along, I created my own using Sublime Text 2. When I am done, I will host it on Github.</p>
+	</article>
+	<article>
+		<h2>Creating a blog post and website every day.</h2>
+		<p>After reading 180 websites in 180 days, I decided to try a version of it on my own. My sites aren't as fancy, but its about holding myself accountable and to practice and get better at web development.</p>
+	</article>
+
+	</article>
+</body>
+
+</html>
